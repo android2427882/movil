@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetalleProyecto">
 
+  <EditText
+      android:id="@+id/txt_descrip"
+      android:layout_width="479dp"
+      android:layout_height="80dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:text="Descsripcion"
+      tools:layout_editor_absoluteX="29dp"
+      tools:layout_editor_absoluteY="207dp" />
+
+  <TextView
+      android:id="@+id/txt_nombre_proyecto"
+      android:layout_width="186dp"
+      android:layout_height="36dp"
+      android:text="TextView"
+      tools:layout_editor_absoluteX="337dp"
+      tools:layout_editor_absoluteY="45dp" />
+
+  <TextView
+      android:id="@+id/textView3"
+      android:layout_width="484dp"
+      android:layout_height="173dp"
+      android:text="TextView"
+      tools:layout_editor_absoluteX="37dp"
+      tools:layout_editor_absoluteY="331dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
