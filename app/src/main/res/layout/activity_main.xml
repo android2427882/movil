@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:onClick="click"
         android:text="Button"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="40dp" />
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
