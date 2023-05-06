@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void click (View view){
-        Intent click = new Intent(this,sppiner.class);
+        Intent click = new Intent(this,MenuPrincipal.class);
         startActivity(click);
 
     }
