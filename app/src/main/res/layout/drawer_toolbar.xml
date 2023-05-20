@@ -13,5 +13,9 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+    <SearchView
+        android:layout_width="244dp"
+        android:layout_height="wrap_content" />
+
 
 </LinearLayout>

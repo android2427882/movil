@@ -2,4 +2,7 @@
     <string name="app_name">bancoProyectos</string>
     <string name="open">open</string>
     <string name="close">close</string>
+    <string name="title_activity_mainfragment">Mainfragment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
