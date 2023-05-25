@@ -12,6 +12,9 @@
         android:theme="@style/Theme.BancoProyectos"
         tools:targetApi="31" >
         <activity
+            android:name=".crearProyecto"
+            android:exported="false" />
+        <activity
             android:name=".sppiner"
             android:exported="false" />
         <activity
