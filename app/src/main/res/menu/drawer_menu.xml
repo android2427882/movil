@@ -7,8 +7,8 @@
 
     <menu>
         <item
-            android:id="@+id/perfil"
             android:icon="@drawable/baseline_person_24"
+            android:id="@+id/perfil"
             android:title="marcos zorro">
             >
 
@@ -23,7 +23,7 @@
 
     <item
 
-        android:id="@+id/personas2"
+        android:id="@+id/mis_proyectos"
         android:icon="@drawable/baseline_bookmark_24"
         android:title="mis proyectos">
 
@@ -32,7 +32,7 @@
 
         <item
 
-        android:id="@+id/personas3"
+        android:id="@+id/equipo"
         android:icon="@drawable/baseline_group_24"
         android:title="equipo de trabajo">
         </item>
