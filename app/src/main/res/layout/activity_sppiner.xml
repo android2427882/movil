@@ -8,11 +8,14 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="51dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="36dp"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/descarga"
+        android:clickable="true"
+        android:contextClickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
