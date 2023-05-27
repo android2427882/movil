@@ -5,6 +5,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -27,7 +28,7 @@ import com.google.android.material.navigation.NavigationView;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class MenuPrincipal extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener  {
+public class MenuPrincipal extends AppCompatActivity  {
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle actionBarDrawerToggle;
     Toolbar toolbar;
@@ -46,92 +47,41 @@ public class MenuPrincipal extends AppCompatActivity implements NavigationView.O
 
         drawerLayout = findViewById(R.id.drawer);
         navigationView = findViewById(R.id.navigationView);
-        getSupportFragmentManager().beginTransaction().add(R.id.container_fragment, new MainFragment()).commit();
-        setTitle("home");
-
-        // actionBarDrawerToggle = setupDrawertoggle();
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.open,R.string.close);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
+        actionBarDrawerToggle.setDrawerIndicatorEnabled(true);
         actionBarDrawerToggle.syncState();
 
-        navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.perfil:
+                        Intent i = new Intent(MenuPrincipal.this, Perfil.class);
+                        startActivity(i);
+                        return true;
 
+                    case R.id.mis_proyectos:
+                        Intent in = new Intent(MenuPrincipal.this, MisProyectos.class);
+                        startActivity(in);
+                        return true;
 
-
-
-
-       // Toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open, R.string.close);
-        drawerLayout.addDrawerListener(actionBarDrawerToggle);
-       // Toggle.setDrawerIndicatorEnabled(true);
-       // Toggle.syncState();
-
-
-        fragmentManager = getSupportFragmentManager();
-        fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.container_fragment, new MainFragment());
-        fragmentTransaction.commit();
-
-    }
-
-   /* private ActionBarDrawerToggle setupDrawertoggle(){
-        return new Toggle(this,
-        drawerLayout,
-        toolbar,
-        R.string.open,
-        R.string.close
-        );
-    }*/
-    private boolean onNavigationItemSelecte(MenuItem Item) {
-        int itemId = Item.getItemId();
-        switch (itemId) {
-            case R.id.perfil:
-                Intent click = new Intent(this, Perfil.class);
-                startActivity(click);
-
-                break;
-            case R.id.mis_proyectos:
-                Intent clicks = new Intent(this, MisProyectos.class);
-                startActivity(clicks);
-
-                break;
-            case R.id.equipo:
-                Intent clic = new Intent(this, EquipoTrabajo.class);
-                startActivity(clic);
-                break;
-
-        }
-        drawerLayout.closeDrawer(GravityCompat.START);
-        return true;
-    }
-
-
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        drawerLayout.closeDrawer(GravityCompat.START);
-        if(menuItem.getItemId() == R.id.perfil){
-            fragmentManager = getSupportFragmentManager();
-            fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.container_fragment,new MainFragment());
-            fragmentTransaction.commit();
-        }
-        if(menuItem.getItemId() == R.id.mis_proyectos){
-            fragmentManager = getSupportFragmentManager();
-            fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.container_fragment,new MainFragment());
-            fragmentTransaction.commit();
-        }
-        if(menuItem.getItemId() == R.id.equipo){
-            fragmentManager = getSupportFragmentManager();
-            fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.commit();
-        }
-
-        return false;
-    }
-
-  /*  @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (Toggle.onOptionsItemSelected())
-            return true;
-        return super.onOptionsItemSelected(item);
-    }*/
+                    case R.id.equipo:
+                        Intent equi = new Intent(MenuPrincipal.this, EquipoTrabajo.class);
+                        startActivity(equi);
+                        return true;
+                    default:
+                        return false;
+                }
+            }
+        });
 }
+
+    private void remplaceFragment(Fragment fragment) {
+        FragmentManager frgManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = frgManager.beginTransaction();
+        fragmentTransaction.replace(R.id.fragmenPadre, fragment);
+        fragmentTransaction.commit();
+    }
+
+    }

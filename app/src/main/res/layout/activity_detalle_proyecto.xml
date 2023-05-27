@@ -65,7 +65,7 @@
       android:layout_marginEnd="40dp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:srcCompat="@drawable/descarga" />
+       />
 
   <TextView
       android:id="@+id/txt_codigo_fuente"
