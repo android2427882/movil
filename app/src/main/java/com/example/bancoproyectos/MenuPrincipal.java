@@ -66,10 +66,7 @@ public class MenuPrincipal extends AppCompatActivity  {
                         startActivity(in);
                         return true;
 
-                    case R.id.equipo:
-                        Intent equi = new Intent(MenuPrincipal.this, EquipoTrabajo.class);
-                        startActivity(equi);
-                        return true;
+
                     default:
                         return false;
                 }

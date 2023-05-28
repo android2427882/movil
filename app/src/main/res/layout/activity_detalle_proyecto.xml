@@ -12,7 +12,7 @@
       android:layout_width="384dp"
       android:layout_height="77dp"
       android:layout_marginStart="16dp"
-      android:layout_marginTop="72dp"
+      android:layout_marginTop="48dp"
       android:ems="10"
       android:inputType="textPersonName"
       android:text="Descsripcion"
@@ -33,7 +33,7 @@
       android:id="@+id/txt_descripcion"
       android:layout_width="386dp"
       android:layout_height="112dp"
-      android:layout_marginStart="16dp"
+      android:layout_marginStart="12dp"
       android:layout_marginTop="36dp"
       android:text="TextView"
       app:layout_constraintStart_toStartOf="parent"
@@ -72,8 +72,8 @@
       android:layout_width="380dp"
       android:layout_height="102dp"
       android:text="TextView"
-      tools:layout_editor_absoluteX="20dp"
-      tools:layout_editor_absoluteY="591dp" />
+      tools:layout_editor_absoluteX="12dp"
+      tools:layout_editor_absoluteY="549dp" />
 
   <TextView
       android:id="@+id/textView"
@@ -82,5 +82,15 @@
       android:text="TextView"
       tools:layout_editor_absoluteX="16dp"
       tools:layout_editor_absoluteY="720dp" />
+
+  <Button
+      android:layout_width="61dp"
+      android:layout_height="38dp"
+      android:layout_marginStart="12dp"
+      android:layout_marginTop="16dp"
+      android:onClick="onClick"
+      app:icon="@android:drawable/ic_menu_revert"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
