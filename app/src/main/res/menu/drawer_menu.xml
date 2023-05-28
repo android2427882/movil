@@ -30,12 +30,7 @@
     </item>
 
 
-        <item
 
-        android:id="@+id/equipo"
-        android:icon="@drawable/baseline_group_24"
-        android:title="equipo de trabajo">
-        </item>
 
 
 </menu>

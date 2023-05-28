@@ -15,13 +15,7 @@
             android:name=".crearProyecto"
             android:exported="false" />
         <activity
-            android:name=".sppiner"
-            android:exported="false" />
-        <activity
             android:name=".DetalleProyecto"
-            android:exported="false" />
-        <activity
-            android:name=".EquipoTrabajo"
             android:exported="false" />
         <activity
             android:name=".MisProyectos"
@@ -44,6 +38,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.bancoproyectos.Toolbar" />
     </application>
 
 </manifest>
