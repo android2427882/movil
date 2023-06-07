@@ -21,4 +21,10 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
     }
-}
+    public void CreateTableQuery(SQLiteDatabase sqLiteDatabase) {
+        sqLiteDatabase.execSQL("create table perfil (id_usuario int primary key,nombre text,ficha number)");
+    }
+
+
+    }
+

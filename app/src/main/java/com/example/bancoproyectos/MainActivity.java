@@ -7,15 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-
+    private boolean condicionCumplida = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-    public void click (View view){
-        Intent click = new Intent(this,Inicio.class);
-        startActivity(click);
+
+    boolean condicionCumplida = true;
+
+    if (condicionCumplida) {
+        Intent intent = new Intent(this,Inicio.class);
+        startActivity(intent);
 
     }
+}
 }
