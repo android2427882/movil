@@ -8,6 +8,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import android.view.MenuItem;
 
 
 import android.content.ClipData;
@@ -28,11 +29,12 @@ import com.google.android.material.navigation.NavigationView;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class MenuPrincipal extends AppCompatActivity  {
+public class MenuPrincipal extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle actionBarDrawerToggle;
     Toolbar toolbar;
     NavigationView navigationView;
+    DetalleProyectoFragment detalleProyectoFragment;
 
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
@@ -44,10 +46,12 @@ public class MenuPrincipal extends AppCompatActivity  {
         setContentView(R.layout.activity_menu_principal);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        drawerLayout = findViewById(R.id.drawer);
+        navigationView = findViewById(R.id.navigationView);
 
         drawerLayout = findViewById(R.id.drawer);
         navigationView = findViewById(R.id.navigationView);
-        actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.open,R.string.close);
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.setDrawerIndicatorEnabled(true);
         actionBarDrawerToggle.syncState();
@@ -55,7 +59,7 @@ public class MenuPrincipal extends AppCompatActivity  {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.perfil:
                         Intent i = new Intent(MenuPrincipal.this, Perfil.class);
                         startActivity(i);
@@ -72,13 +76,29 @@ public class MenuPrincipal extends AppCompatActivity  {
                 }
             }
         });
+    }
+
+        private void remplaceFragment(Fragment fragment){
+            FragmentManager frgManager = getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = frgManager.beginTransaction();
+            fragmentTransaction.replace(R.id.fragmenPadre, fragment);
+            fragmentTransaction.commit();
+        }
+
+        public void enviarProyecto(Proyectos proyecto) {
+
+            detalleProyectoFragment = new DetalleProyectoFragment();
+
+            Bundle bundleEnvio = new Bundle();
+
+            bundleEnvio.putSerializable("objeto",proyecto);
+            detalleProyectoFragment.setArguments(bundleEnvio);
+
+
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.container_fragment, detalleProyectoFragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+    }
 }
-
-    private void remplaceFragment(Fragment fragment) {
-        FragmentManager frgManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = frgManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragmenPadre, fragment);
-        fragmentTransaction.commit();
-    }
-
-    }

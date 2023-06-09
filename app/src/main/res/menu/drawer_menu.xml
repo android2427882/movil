@@ -2,24 +2,26 @@
 <menu android:id="@+id/menuitem"
     xmlns:android="http://schemas.android.com/apk/res/android">
 <item
-    android:title="principal">
+    android:id="@+id/home"
+    android:icon="@drawable/ic_home"
+    android:title="principal" >
+
+</item>
 
 
-    <menu>
+
         <item
             android:icon="@drawable/baseline_person_24"
             android:id="@+id/perfil"
             android:title="marcos zorro">
-            >
 
         </item>
 
 
 
 
-    </menu>
 
-</item>
+
 
     <item
 

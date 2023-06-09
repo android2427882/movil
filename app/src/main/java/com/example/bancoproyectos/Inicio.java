@@ -34,6 +34,9 @@ public class Inicio extends AppCompatActivity {
 
 
             public void onClick(View view) {
+                Intent I = new Intent(Inicio.this, MenuPrincipal.class);
+                startActivity(I);
+
 
                /* AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,"administracion",null,1);
                 SQLiteDatabase BaseDeDatos = admin.getWritableDatabase();
