@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu android:id="@+id/menuitem"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/home"
+    android:icon="@drawable/ic_home"
+    android:title="principal" >
+
+</item>
+
+
+
+        <item
+            android:icon="@drawable/baseline_person_24"
+            android:id="@+id/perfil"
+            android:title="marcos zorro">
+
+        </item>
+
+
+
+
+
+
+
+    <item
+
+        android:id="@+id/mis_proyectos"
+        android:icon="@drawable/baseline_bookmark_24"
+        android:title="mis proyectos">
+
+    </item>
+
+
+
+
+
+</menu>

@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,4 +49,11 @@ public class MisProyectos extends AppCompatActivity {
         intent.putExtra("ListElement", item);
         startActivity(intent);
     }
+    public void onClick(View view) {
+
+
+        Intent intent = new Intent(this, MenuPrincipal.class);
+        startActivity(intent);
+    }
+
 }

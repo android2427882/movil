@@ -4,64 +4,143 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Perfil">
-
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="52dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="36dp"
-        android:text="CTPI"
-        android:textColor="#070707"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text2" />
-
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="234dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="36dp"
-        android:backgroundTint="#000000"
-        android:text="Danna  Victoria Lopez  Garcia"
-        android:textColor="#090909"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.31"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="74dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="72dp"
-        android:text="2427882"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.163"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/text1" />
+    android:foregroundTint="@color/black"
+    tools:context="Perfil">
 
     <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:onClick="onClick"
-        android:text="SALIR"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text3" />
+        android:id="@+id/button4"
+        android:layout_width="56dp"
+        android:layout_height="42dp"
+        android:background="?attr/actionModeCloseDrawable"
+        android:backgroundTint="@color/white"
+        android:textColorHighlight="#FFFFFF"
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="181dp"
-        android:layout_height="135dp"
-        android:layout_marginTop="80dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/usuario__1_" />
+        android:textColorLink="#FFFFFF"
+        app:strokeColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/imagenpro"
+        android:backgroundTintMode="add"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context="Perfil"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="193dp"
+            android:layout_height="112dp"
+            android:layout_gravity="center"
+
+            android:src="@drawable/usuario"
+            tools:layout_editor_absoluteX="118dp"
+            tools:layout_editor_absoluteY="70dp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="5dp"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="118dp"
+            tools:layout_editor_absoluteY="201dp"
+            tools:text="Ana Maria Palacio Rios" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="325dp"
+            android:layout_height="448dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/custom_edit"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="384dp"
+                    android:layout_height="30dp"
+
+
+                    android:text="Correo"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="27dp"
+                    tools:layout_editor_absoluteY="293dp" />
+
+                <EditText
+                    android:id="@+id/edit1"
+                    android:layout_width="238dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:text="anarios220@gmail.com"
+                    tools:layout_editor_absoluteX="63dp"
+                    tools:layout_editor_absoluteY="323dp" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="391dp"
+                    android:layout_height="32dp"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="19dp"
+                    tools:layout_editor_absoluteY="384dp"
+                    tools:text="Ficha" />
+
+                <EditText
+                    android:id="@+id/edit2"
+                    android:layout_width="232dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:text="2427882"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="432dp" />
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="364dp"
+                    android:layout_height="32dp"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="487dp"
+                    tools:text="Centro de Formacion" />
+
+                <EditText
+                    android:id="@+id/edit3"
+                    android:layout_width="237dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:text="CTPI"
+                    tools:layout_editor_absoluteX="65dp"
+                    tools:layout_editor_absoluteY="529dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

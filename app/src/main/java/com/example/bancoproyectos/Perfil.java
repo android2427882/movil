@@ -15,7 +15,7 @@ public class Perfil extends AppCompatActivity {
 
     private TextView T1, T2, T3;
 
-    private Button Salir;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -26,7 +26,7 @@ public class Perfil extends AppCompatActivity {
         T1 = (TextView) findViewById(R.id.text1);
         T2 = (TextView) findViewById(R.id.text2);
         T3 = (TextView) findViewById(R.id.text3);
-        Salir = (Button) findViewById(R.id.button1);
+
 
     }
 
