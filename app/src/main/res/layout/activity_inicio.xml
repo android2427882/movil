@@ -5,25 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/imagenpara_movil"
+    android:background="@drawable/sin_t_tulo_3"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".Inicio">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="83dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="108dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/whatsapp_image_2023_04_19_at_7_58_05_pm" />
-
 
     <androidx.cardview.widget.CardView
-        android:layout_width="340dp"
-        android:layout_height="261dp"
+        android:layout_width="330dp"
+        android:layout_height="307dp"
         android:layout_margin="30dp"
         android:background="@drawable/custom_edit"
         app:cardCornerRadius="30dp"
@@ -31,7 +21,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="307dp"
             android:layout_gravity="center_horizontal"
             android:orientation="vertical"
             android:padding="24dp">
@@ -59,8 +49,13 @@
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background"
-                android:textSize="26sp" />
+                android:textSize="16sp" />
 
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
             <EditText
                 android:id="@+id/edtcontraseña"
@@ -69,34 +64,26 @@
                 android:layout_gravity="center"
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="8dp"
-                android:hint="  password"
+                android:hint=" password"
                 android:inputType="textPassword"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background"
-                android:textSize="24sp" />
+                android:textSize="16sp" />
 
             <CheckBox
-                android:id="@+id/recuerdame"
-                android:layout_width="132dp"
-                android:layout_height="30dp"
+                android:id="@+id/checkBox"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="8dp"
-                android:text="recuerdame"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.25"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edtcontraseña" />
+                android:text="CheckBox" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/buttoniniciar"
                 android:layout_width="93dp"
                 android:layout_height="46dp"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/light_blue_900"
-                android:onClick="onClick"
                 android:text="iniciar"
                 app:cornerRadius="20dp" />
 
@@ -105,15 +92,6 @@
 
 
     </androidx.cardview.widget.CardView>
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="127dp"
-        android:layout_height="38dp"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/light_blue_900"
-        android:onClick="registro"
-        android:text="regristar"
-        app:cornerRadius="20dp" />
 
 
 </LinearLayout>
