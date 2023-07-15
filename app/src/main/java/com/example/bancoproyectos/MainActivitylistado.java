@@ -87,8 +87,8 @@ public class MainActivitylistado extends AppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        imageView = findViewById(R.id.imagenGlide);
-        setImageView();
+
+
         obtenerDatos();
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -141,14 +141,7 @@ public class MainActivitylistado extends AppCompatActivity {
 
 
 
-    private void setImageView() {
-        String url = "";
-        Glide.with(this)
-                .load(url)
 
-                .into(imageView);
-
-    }
 
     private void obtenerDatos() {
         ProyectosApiService service = retrofit.create(com.example.bancoproyectos.api.ProyectosApiService.class);

@@ -91,12 +91,11 @@
 
                 <Button
                     android:id="@+id/buttonver"
-                    android:layout_width="46dp"
+                    android:layout_width="33dp"
                     android:layout_height="match_parent"
-                    android:background="@drawable/baseline_remove_red_eye_24"
-                    android:drawableLeft="@color/black"
-                    android:drawableTint="@android:color/white"
-                    tools:visibility="visible" />
+                    android:layout_weight="1"
+                    android:background="@drawable/baseline_remove_red_eye_24" />
+
             </LinearLayout>
 
             <Button

@@ -6,8 +6,8 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="411dp"
-        android:layout_height="610dp"
+        android:layout_width="406dp"
+        android:layout_height="656dp"
         android:layout_gravity="center_vertical"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,8 +19,8 @@
 
         <ImageView
             android:id="@+id/image"
-            android:layout_width="221dp"
-            android:layout_height="312dp"
+            android:layout_width="208dp"
+            android:layout_height="390dp"
             android:layout_gravity="center"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="182dp" />
