@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:foregroundTint="@color/black"
-    tools:context="Perfil">
+    tools:context=".perfil.Perfil">
 
     <Button
         android:id="@+id/button4"
@@ -25,7 +25,7 @@
         android:backgroundTintMode="add"
         android:gravity="center"
         android:orientation="vertical"
-        tools:context="Perfil"
+        tools:context=".perfil.Perfil"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="16dp">
 
