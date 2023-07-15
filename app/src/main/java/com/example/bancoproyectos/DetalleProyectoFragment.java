@@ -11,8 +11,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.bancoproyectos.Proyectos;
-
 public class DetalleProyectoFragment extends Fragment {
     TextView nombre;
     ImageView imagen;
@@ -24,12 +22,11 @@ public class DetalleProyectoFragment extends Fragment {
         imagen = view.findViewById(R.id.imagen_detalleid);
         //Crear bundle para recibir el objeto enviado por parametro.
         Bundle objetoProyectos = getArguments();
-        Proyectos proyecto = null;;
+        Listadoproyectos proyecto = null;;
         //validacion para verificar si existen argumentos para mostrar
         if(objetoProyectos !=null){
-            proyecto = (Proyectos) objetoProyectos.getSerializable("objeto");
-            imagen.setImageResource(proyecto.getImagenid());
-            nombre.setText(proyecto.getNombre());
+            proyecto = (Listadoproyectos) objetoProyectos.getSerializable("objeto");
+
         }
         return view;
     }

@@ -22,6 +22,11 @@ public class Perfil extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
+        T2=findViewById(R.id.text2);
+        Intent intent=getIntent();
+        String accessT=intent.getStringExtra("token");
+        T2.setText(accessT);
+
 
         T1 = (TextView) findViewById(R.id.text1);
         T2 = (TextView) findViewById(R.id.text2);

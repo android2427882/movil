@@ -1,37 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/imagenpara_movil"
+    android:background="@drawable/sin_t_tulo_3"
     android:gravity="center"
+    android:onClick="onClick"
     android:orientation="vertical"
-    tools:context=".Inicio">
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="83dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="108dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/whatsapp_image_2023_04_19_at_7_58_05_pm" />
+    tools:context=".Inicio"
+    tools:visibility="visible">
 
 
     <androidx.cardview.widget.CardView
-        android:layout_width="340dp"
-        android:layout_height="261dp"
+        android:id="@+id/cardView"
+        android:layout_width="324dp"
+        android:layout_height="270dp"
         android:layout_margin="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="194dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="256dp"
         android:background="@drawable/custom_edit"
         app:cardCornerRadius="30dp"
-        app:cardElevation="20dp">
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:orientation="vertical"
             android:padding="24dp">
@@ -49,7 +50,7 @@
 
             <EditText
                 android:id="@+id/edtusuario"
-                android:layout_width="185dp"
+                android:layout_width="221dp"
                 android:layout_height="44dp"
                 android:layout_gravity="center"
                 android:drawableLeft="@drawable/baseline_person_24"
@@ -59,44 +60,51 @@
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background"
-                android:textSize="26sp" />
+                android:textSize="16sp" />
 
 
-            <EditText
-                android:id="@+id/edtcontraseña"
-                android:layout_width="187dp"
-                android:layout_height="46dp"
-                android:layout_gravity="center"
-                android:drawableLeft="@drawable/baseline_lock_24"
-                android:drawablePadding="8dp"
-                android:hint="  password"
-                android:inputType="textPassword"
-                android:padding="8dp"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/cardview_dark_background"
-                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-            <CheckBox
-                android:id="@+id/recuerdame"
-                android:layout_width="132dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="8dp"
-                android:text="recuerdame"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.25"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edtcontraseña" />
+            <LinearLayout
+                android:id="@+id/myLinearLayout"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtcontraseña"
+                    android:layout_width="207dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="right"
+                    android:drawableLeft="@drawable/baseline_lock_24"
+                    android:drawablePadding="8dp"
+                    android:hint=" password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonver"
+                    android:layout_width="46dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/baseline_remove_red_eye_24"
+                    android:drawableLeft="@color/black"
+                    android:drawableTint="@android:color/white"
+                    tools:visibility="visible" />
+            </LinearLayout>
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/buttoniniciar"
                 android:layout_width="93dp"
                 android:layout_height="46dp"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/light_blue_900"
-                android:onClick="onClick"
                 android:text="iniciar"
                 app:cornerRadius="20dp" />
 
@@ -105,15 +113,17 @@
 
 
     </androidx.cardview.widget.CardView>
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="127dp"
-        android:layout_height="38dp"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/light_blue_900"
-        android:onClick="registro"
-        android:text="regristar"
-        app:cornerRadius="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="42dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        card_view:srcCompat="@drawable/facebook" />
 
 
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

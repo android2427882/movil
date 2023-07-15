@@ -29,6 +29,8 @@ import com.google.android.material.navigation.NavigationView;
 
 import com.google.android.material.navigation.NavigationView;
 
+import java.io.Serializable;
+
 public class MenuPrincipal extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle actionBarDrawerToggle;
@@ -44,6 +46,7 @@ public class MenuPrincipal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
+
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         drawerLayout = findViewById(R.id.drawer);
@@ -85,13 +88,13 @@ public class MenuPrincipal extends AppCompatActivity {
             fragmentTransaction.commit();
         }
 
-        public void enviarProyecto(Proyectos proyecto) {
+        public void enviarProyecto(Listadoproyectos listadoproyectos) {
 
             detalleProyectoFragment = new DetalleProyectoFragment();
 
             Bundle bundleEnvio = new Bundle();
 
-            bundleEnvio.putSerializable("objeto",proyecto);
+            bundleEnvio.putSerializable("objeto", (Serializable) listadoproyectos);
             detalleProyectoFragment.setArguments(bundleEnvio);
 
 

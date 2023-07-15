@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
     tools:context=".MenuPrincipal"
     android:id="@+id/drawer"
     >
@@ -14,6 +15,12 @@
         layout="@layout/drawer_toolbar">
 
     </include>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/activity_main_activitylistado">
+
+    </include>
 
 
     <FrameLayout
@@ -21,12 +28,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
     </FrameLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:headerLayout="@layout/drawer_2"
         app:menu="@menu/drawer_menu"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
