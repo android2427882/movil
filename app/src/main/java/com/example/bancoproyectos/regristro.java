@@ -12,7 +12,8 @@ import android.widget.Toast;
 public class regristro extends AppCompatActivity {
     private EditText et_email,et_contraseña1,et_contraseña2;
 
-    @Override
+
+   /* @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_regristro);
@@ -20,7 +21,7 @@ public class regristro extends AppCompatActivity {
         et_contraseña1= (EditText) findViewById(R.id.txt_contraseña1);
         et_contraseña2 = (EditText) findViewById(R.id.txt_contraseña2);
 
-    }
+    }*/
     public void Registrar(View view){
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,"administracion",null,1);
         SQLiteDatabase BaseDeDatos = admin.getWritableDatabase();

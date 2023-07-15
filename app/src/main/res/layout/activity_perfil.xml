@@ -5,29 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:foregroundTint="@color/black"
-    tools:context="Perfil">
+    tools:context=".perfil.Perfil">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="56dp"
-        android:layout_height="42dp"
-        android:background="?attr/actionModeCloseDrawable"
-        android:backgroundTint="@color/white"
-        android:textColorHighlight="#FFFFFF"
-
-        android:textColorLink="#FFFFFF"
-        app:strokeColor="@color/white" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/imagenpro"
+        android:background="@drawable/fondo"
         android:backgroundTintMode="add"
         android:gravity="center"
         android:orientation="vertical"
-        tools:context="Perfil"
+        tools:context=".perfil.Perfil"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp">
+        tools:layout_editor_absoluteY="-31dp">
 
 
         <ImageView
@@ -61,7 +51,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="438dp"
                 android:layout_gravity="center_horizontal"
                 android:orientation="vertical"
                 android:padding="24dp">
@@ -69,9 +59,7 @@
                 <TextView
                     android:id="@+id/text2"
                     android:layout_width="384dp"
-                    android:layout_height="30dp"
-
-
+                    android:layout_height="43dp"
                     android:text="Correo"
                     android:textColor="@color/black"
                     android:textSize="20sp"
@@ -94,13 +82,12 @@
                     android:id="@+id/text3"
                     android:layout_width="391dp"
                     android:layout_height="32dp"
-                    android:text="TextView"
+                    android:text="Ficha"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     tools:layout_editor_absoluteX="19dp"
-                    tools:layout_editor_absoluteY="384dp"
-                    tools:text="Ficha" />
+                    tools:layout_editor_absoluteY="384dp" />
 
                 <EditText
                     android:id="@+id/edit2"
@@ -118,18 +105,17 @@
                     android:id="@+id/text4"
                     android:layout_width="364dp"
                     android:layout_height="32dp"
-                    android:text="TextView"
+                    android:text="Centro de Formacion"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="487dp"
-                    tools:text="Centro de Formacion" />
+                    tools:layout_editor_absoluteY="487dp" />
 
                 <EditText
                     android:id="@+id/edit3"
                     android:layout_width="237dp"
-                    android:layout_height="47dp"
+                    android:layout_height="96dp"
                     android:layout_gravity="center_horizontal"
                     android:ems="10"
                     android:inputType="textEmailAddress"

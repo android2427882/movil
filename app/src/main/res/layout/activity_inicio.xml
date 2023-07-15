@@ -125,13 +125,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="94dp"
-        android:layout_height="83dp"
+        android:layout_width="103dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        card_view:srcCompat="@drawable/iconomovilmain" />
+        card_view:srcCompat="@drawable/logopro" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

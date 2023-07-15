@@ -3,57 +3,78 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <LinearLayout
-        android:layout_width="406dp"
+        android:layout_width="300dp"
         android:layout_height="656dp"
         android:layout_gravity="center_vertical"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.987">
+        app:layout_constraintVertical_bias="0.333">
 
         <ImageView
             android:id="@+id/image"
             android:layout_width="208dp"
-            android:layout_height="390dp"
+            android:layout_height="128dp"
             android:layout_gravity="center"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="182dp" />
 
         <TextView
+            android:id="@+id/title"
             android:layout_width="match_parent"
-            android:layout_height="43dp"
+            android:layout_height="48dp"
             android:gravity="center"
-            android:text="titulo" />
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textSize="22sp" />
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/app_name"
-            android:textAllCaps="true" />
+            android:text="Descripcion:"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/descripcionProyecto"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="102dp"
+            android:gravity="center"
+            android:text=""
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Categoria:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/aprendiz"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:gravity="center"
             android:text="@string/app_name"
             android:textAllCaps="true" />
 
         <TextView
-            android:id="@+id/aprendiz"
+            android:id="@+id/textView8"
             android:layout_width="match_parent"
-            android:layout_height="53dp"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/app_name"
-            android:textAllCaps="true" />
+            android:text="Codigo fuente:"
+            android:textSize="18sp" />
 
         <TextView
 
@@ -65,13 +86,22 @@
             android:textAllCaps="true" />
 
         <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Estado:"
+            android:textSize="18sp" />
+
+        <TextView
 
             android:id="@+id/estado"
             android:layout_width="match_parent"
-            android:layout_height="42dp"
+            android:layout_height="60dp"
             android:gravity="center"
 
             android:textAllCaps="true" />
+
     </LinearLayout>
 
 

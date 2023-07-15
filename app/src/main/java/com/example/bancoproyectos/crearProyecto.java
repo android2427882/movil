@@ -15,14 +15,14 @@ public class crearProyecto extends AppCompatActivity {
     EditText et_nombre,et_descripcion,et_estado;
 
 
-    @Override
+   /* @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_proyecto);
         et_nombre= (EditText)findViewById(R.id.edit1);
         et_descripcion= (EditText)findViewById(R.id.edit2);
         et_estado = (EditText)findViewById(R.id.edit3);
-    }
+    }*/
     public void Registrar(View view){
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,"administracion1",null,1);
         SQLiteDatabase BaseDeDatos = admin.getWritableDatabase();
