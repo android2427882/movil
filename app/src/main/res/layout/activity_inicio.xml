@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sin_t_tulo_3"
+    android:background="@drawable/fondo"
     android:gravity="center"
     android:onClick="onClick"
     android:orientation="vertical"
@@ -40,12 +40,12 @@
 
             <TextView
                 android:id="@+id/loginText"
-                android:layout_width="163dp"
+                android:layout_width="wrap_content"
                 android:layout_height="42dp"
                 android:layout_gravity="center"
-                android:text="       login"
+                android:text="Login"
                 android:textColor="@color/light_blue_900"
-                android:textSize="26sp"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -60,7 +60,7 @@
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background"
-                android:textSize="16sp" />
+                android:textSize="20sp" />
 
 
             <TextView
@@ -87,14 +87,14 @@
                     android:padding="8dp"
                     android:textColor="@color/black"
                     android:textColorHighlight="@color/cardview_dark_background"
-                    android:textSize="16sp" />
+                    android:textSize="20sp" />
 
                 <Button
                     android:id="@+id/buttonver"
-                    android:layout_width="33dp"
+                    android:layout_width="48dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/baseline_remove_red_eye_24" />
+                    android:background="@drawable/ver" />
 
             </LinearLayout>
 
@@ -123,6 +123,15 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView"
         card_view:srcCompat="@drawable/facebook" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="94dp"
+        android:layout_height="83dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:srcCompat="@drawable/iconomovilmain" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
