@@ -23,9 +23,8 @@
         <ImageView
             android:id="@+id/imageView12"
             android:layout_width="193dp"
-            android:layout_height="112dp"
+            android:layout_height="114dp"
             android:layout_gravity="center"
-
             android:src="@drawable/usuario"
             tools:layout_editor_absoluteX="118dp"
             tools:layout_editor_absoluteY="70dp" />
@@ -33,39 +32,46 @@
         <TextView
             android:id="@+id/text1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_gravity="center"
             android:drawablePadding="5dp"
+            android:text="Ana Maria Palacio Rios"
+            android:textColor="#FFFFFF"
             android:textSize="20sp"
             tools:layout_editor_absoluteX="118dp"
-            tools:layout_editor_absoluteY="201dp"
-            tools:text="Ana Maria Palacio Rios" />
+            tools:layout_editor_absoluteY="201dp" />
 
         <androidx.cardview.widget.CardView
-            android:layout_width="325dp"
-            android:layout_height="448dp"
+            android:layout_width="318dp"
+            android:layout_height="331dp"
             android:layout_margin="30dp"
             android:background="@drawable/custom_edit"
             app:cardCornerRadius="30dp"
             app:cardElevation="20dp">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="438dp"
+                android:layout_width="313dp"
+                android:layout_height="332dp"
                 android:layout_gravity="center_horizontal"
                 android:orientation="vertical"
-                android:padding="24dp">
+                android:padding="24dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="19dp"
+                tools:layout_editor_absoluteY="384dp">
+
 
                 <TextView
-                    android:id="@+id/text2"
-                    android:layout_width="384dp"
-                    android:layout_height="43dp"
+                    android:id="@+id/text01"
+                    android:layout_width="391dp"
+                    android:layout_height="32dp"
                     android:text="Correo"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    tools:layout_editor_absoluteX="27dp"
-                    tools:layout_editor_absoluteY="293dp" />
+                    tools:layout_editor_absoluteX="19dp"
+                    tools:layout_editor_absoluteY="384dp" />
 
                 <EditText
                     android:id="@+id/edit1"
@@ -74,8 +80,10 @@
                     android:layout_gravity="center_horizontal"
                     android:ems="10"
                     android:inputType="textEmailAddress"
+                    android:padding="8dp"
                     android:text="anarios220@gmail.com"
-                    tools:layout_editor_absoluteX="63dp"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="65dp"
                     tools:layout_editor_absoluteY="323dp" />
 
                 <TextView
@@ -91,19 +99,20 @@
 
                 <EditText
                     android:id="@+id/edit2"
-                    android:layout_width="232dp"
-                    android:layout_height="38dp"
+                    android:layout_width="238dp"
+                    android:layout_height="39dp"
                     android:layout_gravity="center_horizontal"
                     android:ems="10"
                     android:inputType="textEmailAddress"
                     android:padding="8dp"
                     android:text="2427882"
+                    android:textSize="18sp"
                     tools:layout_editor_absoluteX="65dp"
-                    tools:layout_editor_absoluteY="432dp" />
+                    tools:layout_editor_absoluteY="323dp" />
 
                 <TextView
                     android:id="@+id/text4"
-                    android:layout_width="364dp"
+                    android:layout_width="391dp"
                     android:layout_height="32dp"
                     android:text="Centro de Formacion"
                     android:textColor="@color/black"
@@ -114,14 +123,17 @@
 
                 <EditText
                     android:id="@+id/edit3"
-                    android:layout_width="237dp"
-                    android:layout_height="96dp"
+                    android:layout_width="238dp"
+                    android:layout_height="39dp"
                     android:layout_gravity="center_horizontal"
                     android:ems="10"
                     android:inputType="textEmailAddress"
+                    android:padding="8dp"
                     android:text="CTPI"
+                    android:textColorHighlight="#3C3C3C"
+                    android:textSize="18sp"
                     tools:layout_editor_absoluteX="65dp"
-                    tools:layout_editor_absoluteY="529dp" />
+                    tools:layout_editor_absoluteY="323dp" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
